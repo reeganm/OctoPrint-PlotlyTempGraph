@@ -350,7 +350,8 @@ $(function() {
 
 			if (!CONFIG_TEMPERATURE_GRAPH) return;
 
-			self.temperatures = self._processTemperatureData(serverTime, data, self.temperatures);
+			// self.temperatures = self._processTemperatureData(serverTime, data, self.temperatures);
+			self.temperatures = self._processTemperatureData(serverTime, data);
 			//self.updatePlot();
 		};
 
